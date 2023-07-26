@@ -1,0 +1,30 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend application using Electron with integration of OpenAI API and Supabase",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Clifford Halasan",
+  "license": "ISC",
+  "bugs": {
+  },
+  "homepage": "",
+  "devDependencies": {
+    "electron": "^24.3.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.22.0",
+    "@sweetalert/with-react": "^0.1.1",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "sweetalert": "^2.1.2",
+    "toastify-js": "^1.12.0"
+  }
+}

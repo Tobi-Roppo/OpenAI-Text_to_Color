@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+    <title>TextCo! App</title>
+</head>
+<body>
+ <div>
+   
+    <form id="form_openai">
+            
+        
+<!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        <div class="logo-container">
+            <img src="./image/logo.png" alt="Logo" class="logo">
+          </div>
+          
+     
+        <div>
+            <header>OpenAI: Text to CSS code</header>
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Text -->
+            <div class="input-box">
+
+                <input type="text" class="input-field input" name="sentence-text" placeholder="Text">
+            </div>
+        </div>
+            <!-- Submit -->
+            <div class="button" type="input">
+                <button class="button btn btn-dark text-white w-25 fw-bold align-self-center m-2" type="submit" disabled>Submit</button>
+                
+            </div>
+            <!-- Result -->
+            
+            <!-- <div id="div-result" class="input-box">
+                <textarea type="text" class="input-field" for="floatingTextarea"  readonly>Background-color: #... </textarea>
+            </div> -->
+            
+            <div class="input-box">
+                <div id="div-result" class="form-floating border border-dark rounded form-group">
+                    <textarea class="form-control" readonly></textarea>
+                    <label class="fw-bold " for="floatingTextarea">Response</label>
+                </div>
+             </div>   
+    </div>
+    </form>
+</div>   
+<script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+<script src="./js/index.js"></script>
+</html>
+
+<script>
+    let input = document.querySelector(".input");
+    let button = document.querySelector(".button button");
+    button.disabled = true;
+    input.addEventListener("input", stateHandle);
+    
+    function stateHandle() {
+  if (input.value.trim() === "") {
+    button.disabled = true;
+  } else {
+    button.disabled = false;
+  }
+    }
+    </script>
+    

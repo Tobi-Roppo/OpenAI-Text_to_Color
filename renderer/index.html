@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; img-src 'self' data:"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; img-src 'self' data:"
+    />
+    <title>TextCo! App</title>
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+
+      <form id="form_openai">
+
+      <div class="container">
+        <header> TextCo!</header>
+        <div class="logo-container">
+          <img src="./image/logo.png" alt="Logo" class="logo">
+        </div>
+      <!-- Logo Title -->
+        <div class="row mb-3 text-start text-center ">
+          <h1 class="header-class-2">OpenAI: Text to CSS code </h1>
+        </div>
+
+        <div class="tab-content" id="pills-tabContent">
+         <!-- Textbox-Input User -->
+          <div class="input" id="pills-text" role="tabpanel" aria-labelledby="pills-text-tab" tabindex="0">
+            <div>
+              <div class="form-floating form-group">
+                <textarea class="form-control w-150 transparent-bg" type="text" name="sentence-text"></textarea>
+                <label class="fw-bold" for="floatingTextarea"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="button" type="input">
+          <button class="button btn btn-dark text-white w-25 fw-bold align-self-center m-2" type="submit">Submit</button>
+        </div>
+        <!-- Textbox-Result User -->
+        <div class="rounded-pill ">
+          <div id="div-result" class="form-floating">
+            <textarea class="form-control transparent-bg" readonly></textarea>
+            <label class="fw-bold " for="floatingTextarea">Response</label>
+          </div>
+        </div>   
+      </form>
+  </div>
+</div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+  <script src="./js/index.js"></script>
+
+</html>
